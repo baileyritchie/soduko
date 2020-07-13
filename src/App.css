@@ -1,38 +1,87 @@
-.App {
+/* Game CSS */
+.game-title{
+  color:black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/*  Board CSS */
+
+.board-main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid black;
+  width:520px;
+  padding: 5px;
+  padding:none;
+  margin: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Square CSS */
+.square-group{
+  display: flex;
+  flex-direction: row;
+  width:520px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.square-form{
+  width: 50px;
+  height:50px;
+  padding:none;
+  text-align: center;
+  border:white;
+  font-size: larger;
+  font-weight: bold;
+}
+.square-form:hover{
+  background-color: cornsilk;
+}
+
+.has-error{
+  color:red;
+}
+
+.editable{
+  text-align: center;
+  width: 45px;
+  height:45px;
+  border:white;
+  font-size: larger;
+  font-weight: bold;
+}
+.editable:hover{
+  background-color: cornsilk;
+}
+*{
+  outline: none;
+}
+
+.btn{
+  width: 140px;
+  margin-top: 25px;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 3px;
+  border: none;
+}
+.bottom-border{
+  border-bottom: 2px solid black !important;
+}
+.right-border{
+  border-right: 2px solid black !important;
 }
