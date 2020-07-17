@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 /* Game CSS */
 .game-title{
   color:black;
@@ -45,8 +50,8 @@
   padding:none;
   text-align: center;
   border:white;
-  font-size: larger;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: normal;
 }
 .square-form:hover{
   background-color: cornsilk;
@@ -60,9 +65,9 @@
   text-align: center;
   width: 45px;
   height:45px;
-  border:white;
-  font-size: larger;
-  font-weight: bold;
+  border:none;
+  color:dimgray;
+  font-size: 36px;
 }
 .editable:hover{
   background-color: cornsilk;
@@ -74,10 +79,12 @@
 .btn{
   width: 140px;
   margin-top: 25px;
+  margin-right: 10px;
   height: 40px;
   background-color: lightblue;
   border-radius: 3px;
   border: none;
+
 }
 .bottom-border{
   border-bottom: 2px solid black !important;
@@ -85,3 +92,4 @@
 .right-border{
   border-right: 2px solid black !important;
 }
+

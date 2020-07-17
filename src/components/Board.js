@@ -22,19 +22,19 @@ class Board extends Component{
   render(){
     const board = this.props.board;
     const squares = this.getSquareData(board);
-    const newSquare = this.props.addSquare();
-
+    
     return (
       <>
       <div className="board-main">
         <table>
           <tbody className="square-group">
-            {this.props.isLoading ? <h1>IS LOADING</h1> : squares.map((i)=> <Square newSquare data={i} key={[i.row,i.col]}/>)}
+            {this.props.isLoading ? <h1>IS LOADING</h1> : squares.map((i)=> <Square newSquare={this.props.addSquare} data={i} key={[i.row,i.col]}/>)}
           </tbody>
         </table>
       </div>
       <div>
         <button onClick={this.props.refresh} className="btn">Create New Puzzle</button>
+        <button className="btn" onClick={this.props.checkBoard}>Finish Board</button>
       </div>
       </>
       );
